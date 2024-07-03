@@ -9,7 +9,7 @@ pub struct User {
     id: String,
     #[serde(flatten)]
     user_type: Option<UserType>,
-    name: Option<String>,
+    pub name: Option<String>,
     avator_url: Option<String>,
 }
 
